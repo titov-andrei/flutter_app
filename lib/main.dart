@@ -50,7 +50,9 @@ class WorkoutsList extends StatelessWidget {
         child: ListView.builder(
           itemCount: workouts.length,
           itemBuilder: (context, i){
-            
+            return Card (
+              
+            )
           }),
       ),
     );
