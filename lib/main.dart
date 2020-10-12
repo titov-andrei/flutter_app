@@ -51,7 +51,8 @@ class WorkoutsList extends StatelessWidget {
           itemCount: workouts.length,
           itemBuilder: (context, i){
             return Card (
-              
+              elevation: 2.0,
+              margin: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
             )
           }),
       ),
