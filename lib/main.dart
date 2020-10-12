@@ -53,6 +53,11 @@ class WorkoutsList extends StatelessWidget {
             return Card (
               elevation: 2.0,
               margin: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              child: Container(
+                child: ListTile(
+                  title: Text(workouts[i].title),
+                ),
+              ),
             )
           }),
       ),
