@@ -34,7 +34,6 @@ class HomePage extends StatelessWidget {
 }
 
 class WorkoutsList extends StatelessWidget {
-  const WorkoutsList({Key key}) : super(key: key);
 
   final workouts = <Workout>[
     Workout(title: 'Test1', author: 'Max1', description: 'Test Workout1', level: 'Beginner'),
@@ -47,7 +46,9 @@ class WorkoutsList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: child,
+      child: Container (
+        child: ListView.builder(itemBuilder: null),
+      ),
     );
   }
 }
