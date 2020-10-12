@@ -4,5 +4,5 @@ class Workout {
   String description;
   String level;
 
-  Workout();
+  Workout({this.title, this.author, this.description, this.level});
 }
