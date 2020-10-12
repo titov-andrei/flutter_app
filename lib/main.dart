@@ -47,7 +47,11 @@ class WorkoutsList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Container (
-        child: ListView.builder(itemBuilder: null),
+        child: ListView.builder(
+          itemCount: workouts.length,
+          itemBuilder: (context, i){
+            
+          }),
       ),
     );
   }
