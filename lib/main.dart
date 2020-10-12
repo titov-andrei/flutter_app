@@ -34,32 +34,51 @@ class HomePage extends StatelessWidget {
 }
 
 class WorkoutsList extends StatelessWidget {
-
   final workouts = <Workout>[
-    Workout(title: 'Test1', author: 'Max1', description: 'Test Workout1', level: 'Beginner'),
-    Workout(title: 'Test2', author: 'Max2', description: 'Test Workout2', level: 'Intermediate'),
-    Workout(title: 'Test3', author: 'Max3', description: 'Test Workout3', level: 'Advanced'),
-    Workout(title: 'Test4', author: 'Max4', description: 'Test Workout4', level: 'Beginner'),
-    Workout(title: 'Test5', author: 'Max5', description: 'Test Workout5', level: 'Intermediate'),
+    Workout(
+        title: 'Test1',
+        author: 'Max1',
+        description: 'Test Workout1',
+        level: 'Beginner'),
+    Workout(
+        title: 'Test2',
+        author: 'Max2',
+        description: 'Test Workout2',
+        level: 'Intermediate'),
+    Workout(
+        title: 'Test3',
+        author: 'Max3',
+        description: 'Test Workout3',
+        level: 'Advanced'),
+    Workout(
+        title: 'Test4',
+        author: 'Max4',
+        description: 'Test Workout4',
+        level: 'Beginner'),
+    Workout(
+        title: 'Test5',
+        author: 'Max5',
+        description: 'Test Workout5',
+        level: 'Intermediate'),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Container (
+      child: Container(
         child: ListView.builder(
-          itemCount: workouts.length,
-          itemBuilder: (context, i){
-            return Card (
-              elevation: 2.0,
-              margin: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-              child: Container(
-                child: ListTile(
-                  title: Text(workouts[i].title),
+            itemCount: workouts.length,
+            itemBuilder: (context, i) {
+              return Card(
+                elevation: 2.0,
+                margin: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                child: Container(
+                  child: ListTile(
+                    title: Text(workouts[i].title),
+                  ),
                 ),
-              ),
-            )
-          }),
+              );
+            }),
       ),
     );
   }
