@@ -84,7 +84,8 @@ class WorkoutsList extends StatelessWidget {
                       ),
                     ),
                     title: Text(workouts[i].title, style: TextStyle(color: Theme.of(context).textTheme.title.color, fontWeight: FontWeight.bold)),
-                    trailing: Icon(Icons.keyboard_arrow_right),
+                    trailing: Icon(Icons.keyboard_arrow_right, color: Theme.of(context).textTheme.title.color),
+                    subtitle: subtitle(context, workouts[i]),
                   ),
                 ),
               );
@@ -92,4 +93,8 @@ class WorkoutsList extends StatelessWidget {
       ),
     );
   }
+}
+
+Widget subtitle(BuildContext context, Workout workout){
+  
 }
