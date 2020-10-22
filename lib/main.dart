@@ -78,9 +78,13 @@ class WorkoutsList extends StatelessWidget {
                     contentPadding: EdgeInsets.symmetric(horizontal: 10),
                     leading: Container(
                       padding: EdgeInsets.only(right: 12),
-                      child: Icon(Icons.fitness_center),
+                      child: Icon(Icons.fitness_center, color: Theme.of(context).textTheme.title.color),
+                      decoration: BoxDecoration(
+                        border: Border(right: BorderSide(width: 1, color: Colors.white24))
+                      ),
                     ),
                     title: Text(workouts[i].title, style: TextStyle(color: Theme.of(context).textTheme.title.color, fontWeight: FontWeight.bold)),
+                    trailing: Icon(Icons.keyboard_arrow_right),
                   ),
                 ),
               );
